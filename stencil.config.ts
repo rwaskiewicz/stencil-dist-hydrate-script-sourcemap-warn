@@ -4,18 +4,11 @@ export const config: Config = {
   namespace: 'dist-hydrate-script-sourcemap-warn',
   outputTargets: [
     {
-      type: 'dist',
-      esmLoaderPath: '../loader',
+      type: 'dist-hydrate-script',
+      dir: 'my-dist'
     },
     {
-      type: 'dist-custom-elements',
-    },
-    {
-      type: 'docs-readme',
-    },
-    {
-      type: 'www',
-      serviceWorker: null, // disable service workers
-    },
+      type: 'dist-custom-elements'
+    }
   ],
 };
